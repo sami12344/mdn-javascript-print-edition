@@ -1,0 +1,107 @@
+{
+ "volume": 4,
+ "file": "MDN-JavaScript-Vol04-Builtins-A-to-Date.pdf",
+ "pages": 497,
+ "articles": 195,
+ "problems": [],
+ "v1_manifest_match": true,
+ "v1_titles_on_page": 195,
+ "per_article": {
+  "v2_exact": 195,
+  "v3_code_identical": 195,
+  "v4_counts_equal": 195,
+  "v5_exact": 190,
+  "v6_code_ok": 195,
+  "v5_exact_plus_svg_figure_text": 1,
+  "v5_same_chars_other_order": 4
+ },
+ "totals": {
+  "chars_source": 492407,
+  "code_blocks": 879,
+  "code_lines": 5968,
+  "code_lines_over_92": 23,
+  "table": 19,
+  "img": 1,
+  "notecard": 68,
+  "math": 0,
+  "chars_pdf": 676494,
+  "code_lines_wrapped_in_pdf": 23,
+  "code_lines_bidi_reordered": 5,
+  "code_lines_with_tabs": 0,
+  "table_headers_repeated": 5
+ },
+ "article_details": [
+  {
+   "key": "a0122",
+   "title": "AsyncGeneratorFunction.prototype.prototype",
+   "page": 258,
+   "v5": "plus 661 chars of SVG figure text"
+  },
+  {
+   "key": "a0145",
+   "title": "BigInt.prototype.toLocaleString()",
+   "page": 310,
+   "v5": "reordered"
+  },
+  {
+   "key": "a0226",
+   "title": "Date.prototype.toLocaleDateString()",
+   "page": 474,
+   "v5": "reordered"
+  },
+  {
+   "key": "a0227",
+   "title": "Date.prototype.toLocaleString()",
+   "page": 478,
+   "v5": "reordered"
+  },
+  {
+   "key": "a0228",
+   "title": "Date.prototype.toLocaleTimeString()",
+   "page": 482,
+   "v5": "reordered"
+  }
+ ],
+ "v7_toc_links_unmatched": 0,
+ "v7_toc_entries_ok": 195,
+ "v7_toc_entries_bad": 0,
+ "v7_toc_entries_expected": 195,
+ "v7_bookmarks": 1430,
+ "v7_bookmarks_match": true,
+ "v8_overflow_pages": [],
+ "pages_less_than_45pct_full": [],
+ "landscape_pages": 0,
+ "v9_internal_links": 1824,
+ "v9_internal_links_unresolved": 0,
+ "v9_external_links": 1827,
+ "v9_fonts_not_embedded": [],
+ "code_continuation_pages": [
+  41,
+  42,
+  47,
+  75,
+  81,
+  84,
+  88,
+  112,
+  129,
+  145,
+  146,
+  153,
+  164,
+  182,
+  197,
+  217,
+  236,
+  249,
+  251,
+  268,
+  283,
+  302,
+  312,
+  325,
+  480
+ ],
+ "images_in_source": 1,
+ "raster_images_in_pdf": 0
+}

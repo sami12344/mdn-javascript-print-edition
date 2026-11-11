@@ -1,0 +1,127 @@
+{
+ "volume": 7,
+ "file": "MDN-JavaScript-Vol07-Builtins-RangeError-to-SyntaxError.pdf",
+ "pages": 382,
+ "articles": 160,
+ "problems": [],
+ "v1_manifest_match": true,
+ "v1_titles_on_page": 160,
+ "per_article": {
+  "v2_exact": 160,
+  "v3_code_identical": 160,
+  "v4_counts_equal": 160,
+  "v5_exact": 151,
+  "v6_code_ok": 160,
+  "v5_exact_plus_svg_figure_text": 8,
+  "v5_minor_glyph_diff": 1
+ },
+ "totals": {
+  "chars_source": 370167,
+  "code_blocks": 668,
+  "code_lines": 4341,
+  "code_lines_over_92": 23,
+  "table": 22,
+  "img": 14,
+  "notecard": 72,
+  "math": 14,
+  "chars_pdf": 523138,
+  "code_lines_wrapped_in_pdf": 25,
+  "code_lines_bidi_reordered": 5,
+  "code_lines_with_tabs": 0,
+  "table_headers_repeated": 7
+ },
+ "article_details": [
+  {
+   "key": "a0624",
+   "title": "Set",
+   "page": 123,
+   "v5": "plus 273 chars of SVG figure text"
+  },
+  {
+   "key": "a0630",
+   "title": "Set.prototype.difference()",
+   "page": 141,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0634",
+   "title": "Set.prototype.intersection()",
+   "page": 148,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0635",
+   "title": "Set.prototype.isDisjointFrom()",
+   "page": 151,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0636",
+   "title": "Set.prototype.isSubsetOf()",
+   "page": 153,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0637",
+   "title": "Set.prototype.isSupersetOf()",
+   "page": 155,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0639",
+   "title": "Set.prototype.symmetricDifference()",
+   "page": 158,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0640",
+   "title": "Set.prototype.union()",
+   "page": 160,
+   "v5": "plus 2 chars of SVG figure text"
+  },
+  {
+   "key": "a0695",
+   "title": "String.prototype.toLocaleLowerCase()",
+   "page": 297,
+   "v5": {
+    "missing": 0,
+    "extra": 1,
+    "missing_chars": "",
+    "extra_chars": "̇"
+   }
+  }
+ ],
+ "v7_toc_links_unmatched": 0,
+ "v7_toc_entries_ok": 160,
+ "v7_toc_entries_bad": 0,
+ "v7_toc_entries_expected": 160,
+ "v7_bookmarks": 1176,
+ "v7_bookmarks_match": true,
+ "v8_overflow_pages": [],
+ "pages_less_than_45pct_full": [],
+ "landscape_pages": 0,
+ "v9_internal_links": 1432,
+ "v9_internal_links_unresolved": 0,
+ "v9_external_links": 1318,
+ "v9_fonts_not_embedded": [],
+ "code_continuation_pages": [
+  21,
+  45,
+  80,
+  85,
+  128,
+  129,
+  216,
+  255,
+  256,
+  269,
+  274,
+  280,
+  282,
+  306,
+  340,
+  341
+ ],
+ "images_in_source": 14,
+ "raster_images_in_pdf": 0
+}

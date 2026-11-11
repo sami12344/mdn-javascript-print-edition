@@ -1,0 +1,97 @@
+{
+ "volume": 3,
+ "file": "MDN-JavaScript-Vol03-Reference-Functions-Classes-RegExp-Errors-Misc.pdf",
+ "pages": 427,
+ "articles": 179,
+ "problems": [],
+ "v1_manifest_match": true,
+ "v1_titles_on_page": 179,
+ "per_article": {
+  "v2_exact": 179,
+  "v3_code_identical": 179,
+  "v4_counts_equal": 179,
+  "v5_exact": 177,
+  "v6_code_ok": 179,
+  "v5_minor_glyph_diff": 1,
+  "v5_exact_plus_svg_figure_text": 1
+ },
+ "totals": {
+  "chars_source": 522482,
+  "code_blocks": 1053,
+  "code_lines": 6711,
+  "code_lines_over_92": 122,
+  "table": 14,
+  "img": 1,
+  "notecard": 63,
+  "math": 0,
+  "table_headers_repeated": 9,
+  "chars_pdf": 598616,
+  "code_lines_wrapped_in_pdf": 122,
+  "code_lines_bidi_reordered": 0,
+  "code_lines_with_tabs": 0,
+  "code_chars_without_glyph": 3
+ },
+ "article_details": [
+  {
+   "key": "a1191",
+   "title": "Character class: [...], [^...]",
+   "page": 121,
+   "v5": {
+    "missing": 3,
+    "extra": 3,
+    "missing_chars": "𐆊",
+    "extra_chars": "�"
+   },
+   "missing_glyphs_in_code": [
+    "U+1018A"
+   ]
+  },
+  {
+   "key": "a1339",
+   "title": "JavaScript execution model",
+   "page": 352,
+   "v5": "plus 420 chars of SVG figure text"
+  }
+ ],
+ "v7_toc_links_unmatched": 0,
+ "v7_toc_entries_ok": 179,
+ "v7_toc_entries_bad": 0,
+ "v7_toc_entries_expected": 179,
+ "v7_bookmarks": 1121,
+ "v7_bookmarks_match": true,
+ "v8_overflow_pages": [],
+ "pages_less_than_45pct_full": [
+  353
+ ],
+ "landscape_pages": 0,
+ "v9_internal_links": 1219,
+ "v9_internal_links_unresolved": 0,
+ "v9_external_links": 2091,
+ "v9_fonts_not_embedded": [],
+ "code_continuation_pages": [
+  15,
+  20,
+  27,
+  37,
+  62,
+  65,
+  69,
+  70,
+  72,
+  73,
+  89,
+  176,
+  215,
+  240,
+  257,
+  290,
+  331,
+  339,
+  376,
+  389,
+  393,
+  394
+ ],
+ "images_in_source": 1,
+ "raster_images_in_pdf": 0
+}

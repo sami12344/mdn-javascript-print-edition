@@ -1,0 +1,203 @@
+/* Print stylesheet for the MDN JavaScript compilation.
+   A4, duplex, mirrored margins (22 mm binding edge, 17 mm outside).
+   Running headers, page numbers and code-continuation marks are stamped by
+   build.py into the top/bottom margins reserved here. */
+
+@page { size: A4; margin: 19mm 17mm 17mm 22mm; }
+@page :left  { margin-left: 17mm; margin-right: 22mm; }
+@page :right { margin-left: 22mm; margin-right: 17mm; }
+/* landscape pages (only used for tables too wide for portrait) */
+@page wide { size: A4 landscape; margin: 22mm 17mm 17mm 17mm; }
+@page wide:left  { margin: 22mm 17mm 17mm 17mm; }
+@page wide:right { margin: 22mm 17mm 17mm 17mm; }
+
+html {
+  font-family: Cambria, "Times New Roman", "Segoe UI Symbol", serif;
+  font-size: 11pt; line-height: 1.4; color: #111; background: #fff;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+body { margin: 0; orphans: 2; widows: 2; hyphens: none; text-align: left;
+       font-variant-emoji: text; /* emoji and tick/cross symbols as monochrome outlines */ }
+p { margin: 0 0 6.5pt; }
+strong, b { font-weight: bold; }
+a { color: inherit; text-decoration: underline dotted #777; text-decoration-thickness: 0.4pt;
+    text-underline-offset: 1.8pt; }
+sup, sub { font-size: 0.72em; line-height: 0; }
+
+/* ---------- articles ---------- */
+article.art { margin: 0; }
+article.brk { break-before: page; }
+article.art:not(.brk) { margin-top: 15pt; border-top: 1.6pt solid #222; padding-top: 7pt; }
+#body > article.art:first-child { break-before: auto; }
+.art-head { margin-bottom: 9pt; break-inside: avoid; break-after: avoid; }
+/* "need space" guards: an unbreakable, invisible block that must fit on the
+   current page, so headings never strand at the bottom of a page.  The guard
+   precedes the heading (instead of being its ::before) so that the heading's
+   own box - and therefore its PDF link target - moves to the new page too. */
+.need { break-inside: avoid; }
+.n-art { height: 58mm; margin-bottom: -58mm; }
+.n-h2 { height: 27mm; margin-bottom: -27mm; }
+.n-h3 { height: 21mm; margin-bottom: -21mm; }
+h4::before { content: ""; display: block; break-inside: avoid; height: 21mm; margin-bottom: -21mm; }
+
+h1, h2, h3, h4, h5, .crumbs, .src, .avail, .codelabel, .pnote, th, caption, .badge,
+.bcd, .toc, .front h2, .front h1 { font-family: "Segoe UI", Arial, sans-serif; }
+h1, h2, h3, h4, h5 { break-after: avoid; color: #000; }
+h1.art-title { font-size: 19pt; line-height: 1.18; font-weight: 600; margin: 1pt 0 4pt;
+               overflow-wrap: anywhere; }
+.lvl2 h1.art-title { font-size: 15.5pt; }
+.lvl3 h1.art-title { font-size: 13.5pt; }
+.guide .lvl1 h1.art-title { font-size: 23pt; }
+.guide .lvl2 h1.art-title { font-size: 19pt; }
+.crumbs { font-size: 7.8pt; letter-spacing: 0.03em; color: #333; }
+.src { font-size: 7.8pt; color: #222; overflow-wrap: anywhere; line-height: 1.3; }
+.src a { text-decoration: none; }
+.avail { font-size: 8.3pt; color: #111; margin-top: 2.5pt; line-height: 1.3; }
+
+h2 { font-size: 14pt; line-height: 1.2; font-weight: 600; margin: 8pt 0 6pt;
+     padding-bottom: 1.5pt; border-bottom: 0.5pt solid #888; }
+h3 { font-size: 11.6pt; line-height: 1.25; font-weight: 600; margin: 6pt 0 4.5pt; }
+h4 { font-size: 10.6pt; line-height: 1.25; font-weight: 600; margin: 9pt 0 4pt; }
+h5 { font-size: 10pt; font-weight: 600; font-style: italic; margin: 8pt 0 3pt; }
+h1 code, h2 code, h3 code, h4 code, h5 code { font-size: 0.95em; }
+
+/* ---------- lists ---------- */
+ul, ol { margin: 0 0 6.5pt; padding-left: 17pt; }
+li { margin-bottom: 2pt; }
+li > p { margin-bottom: 3pt; }
+li > ul, li > ol { margin-top: 2pt; margin-bottom: 2pt; }
+dl { margin: 0 0 6.5pt; }
+dt { font-weight: bold; margin-top: 4.5pt; break-after: avoid; }
+dt code { font-weight: bold; }
+dd { margin: 1pt 0 4pt 15pt; }
+dd > p:last-child { margin-bottom: 3pt; }
+blockquote { border-left: 2pt solid #888; margin: 6pt 0 8pt 4pt; padding: 0 0 0 10pt; }
+
+/* ---------- code ---------- */
+code, kbd, pre { font-family: Consolas, "Cascadia Mono", "Courier New", "Segoe UI Symbol", monospace; }
+code { font-size: 0.895em; overflow-wrap: anywhere; }
+kbd { font-size: 0.86em; border: 0.5pt solid #555; border-radius: 2pt; padding: 0 2.5pt; }
+.codeblock { margin: 5pt 0 9pt; }
+.codeblock.keep { break-inside: avoid; }
+.codelabel { font-size: 7.4pt; line-height: 1.2; color: #333; text-align: right; margin: 0 1pt 1pt 0;
+             break-after: avoid; }
+.codeblock.bad .codelabel, .codeblock.good .codelabel { font-weight: 600; color: #000; }
+pre.code {
+  font-size: 9.25pt; line-height: 1.32; margin: 0;
+  white-space: pre-wrap; overflow-wrap: anywhere; word-break: normal; tab-size: 4;
+  border: 0.5pt solid #9a9a9a; border-left: 2.2pt solid #595959;
+  padding: 4pt 6pt 4pt 7pt; background: #fff; color: #000;
+  orphans: 3; widows: 3;
+}
+pre.code.bare { margin: 5pt 0 9pt; }
+pre.code code { font: inherit; overflow-wrap: anywhere; }
+pre.code .ck { display: block; break-inside: avoid; }
+pre.code .ck.long { break-inside: auto; }
+
+/* ---------- notes ---------- */
+.notecard { border: 0.5pt solid #888; border-left: 3pt solid #444; padding: 5pt 8pt 0.5pt 8pt;
+            margin: 6pt 0 9pt; font-size: 10.5pt; line-height: 1.36; break-inside: avoid; }
+.notecard.warning, .notecard.deprecated { border-left: 5pt solid #000; }
+.notecard.experimental, .notecard.nonstandard { border-left: 3pt double #000; }
+.pnote { font-family: "Segoe UI", Arial, sans-serif; font-style: italic; font-size: 8.4pt;
+         line-height: 1.3; color: #222; border: 0.5pt dashed #777; padding: 2.5pt 5pt;
+         margin: 4pt 0 5pt; break-after: avoid; overflow-wrap: anywhere; }
+.badge { font-size: 7pt; font-weight: 600; font-style: normal;
+         letter-spacing: 0.02em; border: 0.5pt solid #444; border-radius: 2pt;
+         padding: 0 2.5pt 0.4pt; white-space: nowrap; vertical-align: 1pt; color: #000;
+         background: #fff; }
+
+/* ---------- tables ---------- */
+figure { margin: 6pt 0 9pt; }
+table { border-collapse: collapse; width: 100%; font-size: 9.7pt; line-height: 1.3; margin: 0 0 9pt; }
+figure > table { margin: 0; }
+th, td { border: 0.5pt solid #777; padding: 2.5pt 4pt; vertical-align: top; text-align: left;
+         overflow-wrap: break-word; }
+/* words and code tokens in table cells stay whole, so narrow columns are never squeezed to
+   a few characters; only very wide tables (6+ columns) may break tokens anywhere */
+table code { overflow-wrap: break-word; }
+table[data-cols="6"] td, table[data-cols="7"] td, table[data-cols="8"] td, table[data-cols="9"] td,
+table[data-cols="6"] th, table[data-cols="7"] th, table[data-cols="8"] th, table[data-cols="9"] th,
+table[data-cols="6"] code, table[data-cols="7"] code, table[data-cols="8"] code,
+table[data-cols="9"] code, table.bcdt td, table.bcdt th, table.bcdt code, table.specs td,
+table.specs code { overflow-wrap: anywhere; }
+th { background: #ebebeb; font-size: 8.8pt; font-weight: 600; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+tr.rs { break-inside: auto; }
+caption { caption-side: top; text-align: left; font-size: 9pt; font-weight: 600; padding-bottom: 3pt; }
+table code { font-size: 8.8pt; }
+table[data-cols="6"], table[data-cols="7"], table[data-cols="8"], table[data-cols="9"] { font-size: 8.8pt; }
+table[data-cols="6"] code, table[data-cols="7"] code, table[data-cols="8"] code,
+table[data-cols="9"] code { font-size: 8.2pt; }
+table.specs { font-size: 9.6pt; }
+table.specs td { padding: 3pt 5pt; }
+.specurl { font-family: Consolas, monospace; font-size: 7.9pt; color: #222; overflow-wrap: anywhere; }
+/* tables too wide for the portrait column: rotated a quarter turn on a page of their own.
+   (Chrome rescales the whole document when page sizes are mixed, so real landscape pages
+   are not used.) */
+.rot { writing-mode: vertical-rl; inline-size: 252mm; break-inside: avoid; margin: 0 0 6pt; }
+.rot figure { margin: 0; }
+.rot table { width: auto; inline-size: 100%; font-size: 8.8pt !important; margin: 0; }
+.rot table code { font-size: 8pt !important; overflow-wrap: anywhere !important; }
+.rot table td, .rot table th { overflow-wrap: break-word !important; }
+
+img { max-width: 100%; height: auto; break-inside: avoid; }
+math { font-size: 1.04em; }
+annotation { display: none; }
+
+/* ---------- compatibility tables ---------- */
+.bcd { margin: 6pt 0 10pt; }
+table.bcdt { table-layout: fixed; width: 100%; font-size: 8pt; line-height: 1.2; margin: 0;
+             font-variant-numeric: tabular-nums; }
+.bcdt th, .bcdt td { padding: 2pt 0.6pt; text-align: center; vertical-align: middle;
+                     overflow-wrap: anywhere; }
+.bcdt th.feat { width: 25%; text-align: left; font-weight: normal; padding: 2pt 3pt;
+                background: #fff; font-size: 8pt; }
+.bcdt thead th.feat { background: #ebebeb; font-weight: 600; vertical-align: bottom; }
+.bcdt th.feat code { font-size: 8pt; }
+.bcdt th.d1 { padding-left: 9pt; } .bcdt th.d2 { padding-left: 16pt; } .bcdt th.d3 { padding-left: 23pt; }
+.bcdt tr.grp th { font-size: 7.6pt; }
+.bcdt tr.br th { height: 25mm; vertical-align: bottom; padding: 2.5pt 0; font-weight: normal;
+                 font-size: 7.6pt; }
+.bcdt tr.br th span { writing-mode: sideways-lr; white-space: nowrap; }
+.bcdt td.no { font-weight: bold; background: #e2e2e2; }
+.bcdt td.unk { color: #444; }
+.bcdt sup { font-size: 6pt; font-weight: normal; }
+.bcd-notes { font-family: "Segoe UI", Arial, sans-serif; font-size: 7.9pt; line-height: 1.3;
+             margin: 3pt 0 2pt; padding-left: 20pt; }
+.bcd-notes li { margin-bottom: 1pt; }
+.bcd-notes code { font-size: 7.6pt; }
+.bcd-src { font-family: "Segoe UI", Arial, sans-serif; font-style: italic; font-size: 7.2pt;
+           color: #333; margin: 2pt 0 0; }
+.bcd-src code { font-size: 7pt; font-style: normal; }
+
+/* ---------- anchor index (removed from the final PDF) ---------- */
+#anchor-index { break-before: page; font-size: 3pt; line-height: 1; overflow-wrap: anywhere; }
+#anchor-index a { text-decoration: none; }
+
+/* ---------- front matter ---------- */
+.front h1 { font-size: 24pt; line-height: 1.15; margin: 0 0 3pt; font-weight: 600; }
+.front .vol { font-family: "Segoe UI", Arial, sans-serif; font-size: 14pt; font-weight: 600; margin: 0 0 10pt; }
+.front h2 { font-size: 11.5pt; margin: 10pt 0 3pt; border: 0; padding: 0; }
+.front h2::before { display: none; }
+.front p, .front li { font-size: 9.6pt; line-height: 1.36; margin-bottom: 4pt; }
+.front ul { padding-left: 14pt; margin-bottom: 4pt; }
+.front .rule { border-top: 1.6pt solid #222; margin: 8pt 0; }
+.front table { font-size: 8.8pt; width: auto; }
+.toc-title { font-family: "Segoe UI", Arial, sans-serif; font-size: 16pt; font-weight: 600;
+             margin: 0 0 8pt; break-before: page; }
+.toc { font-size: 9.6pt; line-height: 1.3; }
+.toc.cols2 { column-count: 2; column-gap: 9mm; }
+.toc a { display: flex; align-items: baseline; text-decoration: none; break-inside: avoid; }
+.toc .t { flex: 0 1 auto; overflow-wrap: anywhere; }
+.toc .dots { flex: 1 1 6pt; min-width: 8pt; border-bottom: 0.6pt dotted #555; margin: 0 3pt;
+             position: relative; top: -2.2pt; }
+.toc .p { flex: none; min-width: 19pt; text-align: right; font-variant-numeric: tabular-nums; }
+.toc .l1 { font-weight: 600; margin-top: 3.5pt; font-size: 9.8pt; }
+.toc .l2 { padding-left: 10pt; font-size: 9.2pt; }
+.toc .l3 { padding-left: 20pt; font-size: 8.8pt; }
+.toc .sec { padding-left: 12pt; font-size: 8.9pt; font-family: Cambria, serif; }
+.toc .l2 + .sec, .toc .sec.s2 { padding-left: 22pt; }
+.toc .part { font-size: 10.5pt; font-weight: 600; margin: 9pt 0 2pt; border-bottom: 0.8pt solid #222;
+             break-after: avoid; letter-spacing: 0.04em; }

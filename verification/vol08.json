@@ -1,0 +1,59 @@
+{
+ "volume": 8,
+ "file": "MDN-JavaScript-Vol08-Builtins-Temporal.pdf",
+ "pages": 457,
+ "articles": 242,
+ "problems": [],
+ "v1_manifest_match": true,
+ "v1_titles_on_page": 242,
+ "per_article": {
+  "v2_exact": 242,
+  "v3_code_identical": 242,
+  "v4_counts_equal": 242,
+  "v5_exact": 242,
+  "v6_code_ok": 242
+ },
+ "totals": {
+  "chars_source": 513094,
+  "code_blocks": 536,
+  "code_lines": 3142,
+  "code_lines_over_92": 36,
+  "table": 6,
+  "img": 0,
+  "notecard": 38,
+  "math": 0,
+  "table_headers_repeated": 13,
+  "chars_pdf": 731083,
+  "code_lines_wrapped_in_pdf": 36,
+  "code_lines_bidi_reordered": 0,
+  "code_lines_with_tabs": 0
+ },
+ "article_details": [],
+ "v7_toc_links_unmatched": 0,
+ "v7_toc_entries_ok": 242,
+ "v7_toc_entries_bad": 0,
+ "v7_toc_entries_expected": 242,
+ "v7_bookmarks": 1412,
+ "v7_bookmarks_match": true,
+ "v8_overflow_pages": [],
+ "pages_less_than_45pct_full": [
+  8,
+  10
+ ],
+ "landscape_pages": 0,
+ "v9_internal_links": 3409,
+ "v9_internal_links_unresolved": 0,
+ "v9_external_links": 1008,
+ "v9_fonts_not_embedded": [],
+ "code_continuation_pages": [
+  57,
+  69,
+  85,
+  124,
+  218,
+  323,
+  385
+ ],
+ "images_in_source": 0,
+ "raster_images_in_pdf": 0
+}
