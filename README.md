@@ -4,6 +4,8 @@ The complete English JavaScript documentation from [MDN Web Docs](https://develo
 
 **1,346 articles · 3,744 pages · snapshot of 10 November 2026**
 
+Website: <https://sami12344.github.io/mdn-javascript-print-edition/>
+
 > This is an unofficial compilation. It is not published, reviewed or endorsed by Mozilla or MDN.
 > The text is by Mozilla Contributors and is licensed CC-BY-SA 2.5 or later — see [Licence and attribution](#licence-and-attribution).
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sami12344.github.io/mdn-javascript-print-edition/sitemap.xml

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDN JavaScript Documentation as Printable PDF Books (unofficial print edition)</title>
+<meta name="description" content="The complete MDN JavaScript Guide and Reference as nine free, print-ready A4 PDF books: 1,346 articles, 3,744 pages. Unofficial compilation of MDN Web Docs, CC-BY-SA.">
+<meta name="keywords" content="MDN JavaScript PDF, JavaScript documentation PDF, MDN JavaScript book, printable JavaScript reference, JavaScript guide PDF, MDN Web Docs offline, learn JavaScript book">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sami12344.github.io/mdn-javascript-print-edition/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MDN JavaScript Documentation as Printable PDF Books">
+<meta property="og:description" content="The complete MDN JavaScript Guide and Reference as nine free, print-ready A4 PDF books. 1,346 articles, 3,744 pages. Unofficial, CC-BY-SA.">
+<meta property="og:url" content="https://sami12344.github.io/mdn-javascript-print-edition/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BookSeries",
+  "name": "MDN JavaScript Documentation — Print Edition (unofficial)",
+  "description": "The complete MDN JavaScript Guide and Reference laid out as nine print-ready A4 PDF books: 1,346 articles, 3,744 pages.",
+  "url": "https://sami12344.github.io/mdn-javascript-print-edition/",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "isBasedOn": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  "author": { "@type": "Organization", "name": "Mozilla Contributors (MDN Web Docs)" },
+  "dateModified": "2026-11-10",
+  "about": ["JavaScript", "ECMAScript", "Web development"],
+  "encodingFormat": "application/pdf"
+}
+</script>
+<style>
+:root {
+  --bg: #fbfaf7; --ink: #1c1b19; --muted: #5d5a54; --rule: #dcd8cf; --card: #ffffff;
+  --accent: #1f4f8f; --accent-ink: #ffffff; --note: #f3efe6;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16171a; --ink: #ecebe7; --muted: #a9a69f; --rule: #34363b; --card: #1e2024;
+          --accent: #8db8f2; --accent-ink: #10131a; --note: #23262b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+       font: 17px/1.6 Georgia, "Iowan Old Style", "Palatino Linotype", serif; }
+main { max-width: 860px; margin: 0 auto; padding: 40px 16px 56px; }
+h1, h2, th, .btn, .meta, nav, footer { font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif; }
+h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.01em; }
+.sub { font-size: 20px; color: var(--muted); margin: 0 0 18px; }
+.meta { font-size: 14px; color: var(--muted); margin: 0 0 22px; }
+.meta b { color: var(--ink); }
+h2 { font-size: 22px; margin: 40px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+p { margin: 0 0 14px; }
+a { color: var(--accent); }
+.note { background: var(--note); border-left: 4px solid var(--accent); padding: 12px 16px; margin: 0 0 8px;
+        font-size: 15.5px; }
+.btn { display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+       padding: 10px 18px; border-radius: 6px; font-weight: 600; font-size: 15px; margin: 6px 8px 0 0; }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 15.5px; min-width: 520px; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+td.n, th.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+tr.total td { font-weight: 700; border-bottom: 0; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 13.5px;
+         color: var(--muted); line-height: 1.5; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>MDN JavaScript Documentation as Printable PDF Books</h1>
+  <p class="sub">The complete JavaScript Guide and Reference from MDN Web Docs, laid out as nine print-ready A4 volumes.</p>
+  <p class="meta"><b>1,346 articles</b> · <b>3,744 pages</b> · free to download · snapshot of 10 November 2026</p>
+  <p class="note">This is an <b>unofficial</b> compilation. It is not published, reviewed or endorsed by Mozilla or MDN.
+  The text is by Mozilla Contributors and is licensed CC-BY-SA 2.5 or later.</p>
+  <p>
+    <a class="btn" href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol01-Guide.pdf">Download Volume 1: JavaScript Guide (PDF)</a>
+    <a class="btn ghost" href="https://github.com/sami12344/mdn-javascript-print-edition">View on GitHub</a>
+  </p>
+</header>
+
+<section>
+  <h2>Why a print edition?</h2>
+  <p>MDN is the JavaScript reference most developers use every day, but it only exists on a screen. Many people
+  learn better from paper: reading on a screen for hours is tiring, hurts some people's eyes, and makes it hard to
+  stay focused.</p>
+  <p>These books let you study the same material on paper. The wording, code examples and section order are MDN's
+  own, so what you read here is what you will find on the website when you look something up while coding. The
+  collection contains the whole JavaScript section of MDN, not a selection.</p>
+</section>
+
+<section>
+  <h2>Download the volumes</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Vol.</th><th>Contents</th><th class="n">Articles</th><th class="n">Pages</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol01-Guide.pdf">JavaScript Guide</a></td><td class="n">38</td><td class="n">383</td></tr>
+      <tr><td>2</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol02-Reference-Operators-Statements.pdf">Reference: Expressions &amp; operators, Statements &amp; declarations</a></td><td class="n">114</td><td class="n">448</td></tr>
+      <tr><td>3</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol03-Reference-Functions-Classes-RegExp-Errors-Misc.pdf">Reference: Functions, Classes, Regular expressions, Errors, Misc</a></td><td class="n">179</td><td class="n">427</td></tr>
+      <tr><td>4</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol04-Builtins-A-to-Date.pdf">Built-in objects: AbstractModuleSource to Date (includes Array)</a></td><td class="n">195</td><td class="n">497</td></tr>
+      <tr><td>5</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol05-Builtins-decodeURI-to-Iterator.pdf">Built-in objects: decodeURI() to Iterator (includes Error, Function, Intl)</a></td><td class="n">179</td><td class="n">497</td></tr>
+      <tr><td>6</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol06-Builtins-JSON-to-Proxy.pdf">Built-in objects: JSON to Proxy (includes Map, Math, Number, Object, Promise)</a></td><td class="n">162</td><td class="n">478</td></tr>
+      <tr><td>7</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol07-Builtins-RangeError-to-SyntaxError.pdf">Built-in objects: RangeError to SyntaxError (includes RegExp, Set, String, Symbol)</a></td><td class="n">160</td><td class="n">382</td></tr>
+      <tr><td>8</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol08-Builtins-Temporal.pdf">Built-in objects: Temporal</a></td><td class="n">242</td><td class="n">457</td></tr>
+      <tr><td>9</td><td><a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/volumes/MDN-JavaScript-Vol09-Builtins-TypedArray-to-WeakSet.pdf">Built-in objects: TypedArray to WeakSet</a></td><td class="n">77</td><td class="n">175</td></tr>
+      <tr class="total"><td></td><td>Total</td><td class="n">1,346</td><td class="n">3,744</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="margin-top:14px">Also available: the <a href="https://github.com/sami12344/mdn-javascript-print-edition/raw/main/MDN-JavaScript-Master-Index.pdf">master index</a>
+  (every article in alphabetical order with its volume and page, 12 pages).</p>
+  <p>Volume 1 is the Guide and is meant to be read front to back. Volumes 2 to 9 are reference books; print the ones you need.</p>
+</section>
+
+<section>
+  <h2>What is included</h2>
+  <ul>
+    <li>The complete JavaScript Guide, including the intermediate and advanced guides.</li>
+    <li>The complete JavaScript Reference: every built-in object with its constructors, methods and properties;
+        statements and declarations; expressions and operators; functions; classes; regular expression syntax;
+        the error reference; lexical grammar, strict mode and iteration protocols.</li>
+  </ul>
+  <p>Not included, because they are separate sections of MDN: the <i>Learn web development</i> beginner tutorials,
+  Web APIs such as the DOM and Fetch, HTML, CSS and the Glossary.</p>
+</section>
+
+<section>
+  <h2>Is it the same as the MDN website?</h2>
+  <p>The content is the same; the layout is redesigned for paper.</p>
+  <ul>
+    <li>The article text was checked automatically against MDN for all 1,346 articles.</li>
+    <li>All 6,857 code blocks (49,890 lines) are character-for-character identical to the source, including indentation.</li>
+    <li>Interactive "Try it" examples cannot run on paper; their source code is printed in full.</li>
+    <li>Browser compatibility tables are rebuilt from MDN's browser-compat-data in a compact text form.</li>
+    <li>There is no syntax highlighting; pages are black on white to print cleanly.</li>
+    <li>This is a snapshot. MDN is edited every day, so the website will move ahead of the books.</li>
+  </ul>
+  <p>Full details are in the <a href="https://github.com/sami12344/mdn-javascript-print-edition/blob/main/verification/VERIFICATION-REPORT.md">verification report</a>.</p>
+</section>
+
+<section>
+  <h2>Printing</h2>
+  <ul>
+    <li>A4 paper, double-sided, flipped on the long edge.</li>
+    <li>Print at "Actual size" or 100 %, not "Fit to page".</li>
+    <li>Margins are mirrored for binding, and every volume has a table of contents, running headers and page numbers.</li>
+    <li>Body text is 11 pt and code is 9.25 pt; a monochrome printer is enough.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Documentation text © Mozilla Contributors, from
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs</a>, licensed under
+  <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a> or any later version. The PDFs are
+  modified copies (re-laid-out for print) distributed under the same licence. Code samples are CC0 or MIT as
+  described in the <a href="https://github.com/sami12344/mdn-javascript-print-edition/blob/main/LICENSE.md">licence notice</a>.</p>
+  <p>"MDN" and "Mozilla" are trademarks of the Mozilla Foundation, used here only to say where the content comes
+  from. This site is not affiliated with Mozilla.</p>
+</footer>
+</main>
+</body>
+</html>
