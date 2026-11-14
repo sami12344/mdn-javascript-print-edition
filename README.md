@@ -2,9 +2,15 @@
 
 The complete English JavaScript documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript), laid out as nine print-ready A4 books.
 
+![Two facing pages from Volume 1, the start of the Closures chapter: MDN's text and code examples set for A4 paper, with running headers and ruled code boxes.](images/vol01-closures-spread.png)
+
+*Volume 1, pages 322–323: the start of* Closures.
+
 **1,346 articles · 3,744 pages · snapshot of 10 November 2026**
 
 Website: <https://sami12344.github.io/mdn-javascript-print-edition/>
+
+**Start here:** [Volume 1, the JavaScript Guide (PDF, 383 pages)](volumes/MDN-JavaScript-Vol01-Guide.pdf) is meant to be read front to back.
 
 > This is an unofficial compilation. It is not published, reviewed or endorsed by Mozilla or MDN.
 > The text is by Mozilla Contributors and is licensed CC-BY-SA 2.5 or later — see [Licence and attribution](#licence-and-attribution).

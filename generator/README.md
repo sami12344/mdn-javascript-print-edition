@@ -13,15 +13,15 @@ Not endorsed by Mozilla.
 - Python 3.11+ with `pymupdf` and `lxml` (`pip install pymupdf lxml`)
 - Google Chrome or Microsoft Edge (used headless to print HTML to PDF)
 - Fonts: Cambria, Consolas, Segoe UI (Windows). On other systems change the
-  font families in `scripts/print.css` and the font files in `FONTS` in
-  `scripts/build.py`.
+  font families in `generator/print.css` and the font files in `FONTS` in
+  `generator/build.py`.
 - The browser-compat-data package, unpacked to `data/bcd/package/data.json`:
   download the tarball named by `https://registry.npmjs.org/@mdn/browser-compat-data/latest`
   and extract `package/data.json`.
 
 ## Refreshing the collection
 
-Put these files in a folder named `scripts` inside an empty project folder (the scripts create `data/`, `manifest/`, `build/` and `output/` next to it). Run from the `scripts` folder, in this order:
+Run the scripts from the `generator` folder of a clone of this repository, in this order. They create `data/`, `manifest/`, `build/` and `output/` next to it, in the repository root; these folders are git-ignored.
 
 | Step | Command | What it does |
 |---|---|---|
@@ -35,16 +35,16 @@ Put these files in a folder named `scripts` inside an empty project folder (the 
 
 ## Files
 
-- `scripts/common.py` — paths and helpers
-- `scripts/fetch.py` — inventory and retrieval
-- `scripts/plan.py` — manifest, ordering, volumes
-- `scripts/convert.py` — article JSON → print HTML (the list of all transformations is in its docstring)
-- `scripts/bcd.py` — print rendering of browser-compatibility tables
-- `scripts/print.css` — page geometry and typography
-- `scripts/build.py` — Chrome rendering, contents, bookmarks, running headers, page numbers
-- `scripts/verify.py` — automated verification
-- `scripts/sheets.py` — contact sheets for visual checks
-- `scripts/report.py` — master index, manifest, report
+- `generator/common.py` — paths and helpers
+- `generator/fetch.py` — inventory and retrieval
+- `generator/plan.py` — manifest, ordering, volumes
+- `generator/convert.py` — article JSON → print HTML (the list of all transformations is in its docstring)
+- `generator/bcd.py` — print rendering of browser-compatibility tables
+- `generator/print.css` — page geometry and typography
+- `generator/build.py` — Chrome rendering, contents, bookmarks, running headers, page numbers
+- `generator/verify.py` — automated verification
+- `generator/sheets.py` — contact sheets for visual checks
+- `generator/report.py` — master index, manifest, report
 
 ## Layout parameters you may want to change
 
