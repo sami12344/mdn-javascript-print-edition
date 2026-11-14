@@ -18,7 +18,7 @@ import pymupdf as fitz
 
 import bcd
 from build import chrome, chrome_pdf, css
-from common import BUILD, MANIFEST_DIR, OUT, ROOT, SITE, load_json, save_json
+from common import SCRIPTS, BUILD, MANIFEST_DIR, OUT, ROOT, SITE, load_json, save_json
 
 
 def main():
@@ -313,9 +313,9 @@ td.n, th.n { text-align: right; }
     # scripts + data needed to refresh
     dst = os.path.join(OUT, "generator")
     os.makedirs(dst, exist_ok=True)
-    for fn in os.listdir(os.path.join(ROOT, "scripts")):
+    for fn in os.listdir(SCRIPTS):
         if fn.endswith((".py", ".css")):
-            shutil.copy2(os.path.join(ROOT, "scripts", fn), os.path.join(dst, fn))
+            shutil.copy2(os.path.join(SCRIPTS, fn), os.path.join(dst, fn))
     print(f"report written: {ta} articles, {tp} pages, {ts} sheets, index {idx_pages} pages, "
           f"{len(probs)} problems")
 

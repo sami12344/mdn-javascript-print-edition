@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+
+# generator working folders
+/data/
+/manifest/
+/build/
+/output/

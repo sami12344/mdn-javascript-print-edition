@@ -11,7 +11,7 @@ IMG = os.path.join(DATA, "img")
 MANIFEST_DIR = os.path.join(ROOT, "manifest")
 BUILD = os.path.join(ROOT, "build")
 OUT = os.path.join(ROOT, "output")
-SCRIPTS = os.path.join(ROOT, "scripts")
+SCRIPTS = os.path.dirname(os.path.abspath(__file__))  # this folder, whatever it is called
 
 SITE = "https://developer.mozilla.org"
 SCOPE_PREFIX = "/en-US/docs/Web/JavaScript"
